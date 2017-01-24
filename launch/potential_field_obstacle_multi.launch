@@ -1,0 +1,21 @@
+<launch>
+
+<node   name="stageros" pkg="stage_ros" type="stageros"
+        args="$(find potential_field)/world/obstacle_multi.world" />
+
+<arg    name="goal_x" default="-8" />
+<arg    name="goal_y" default="-8" />
+
+<node   name="potfieldrobot_0" pkg="potential_field" type="potential_field"
+        args="0 4 $(arg goal_x) $(arg goal_y)" launch-prefix="xterm -hold -e" />
+<node   name="potfieldrobot_1" pkg="potential_field" type="potential_field"
+        args="1 4 $(arg goal_x) $(arg goal_y)" launch-prefix="xterm -hold -e" />
+<node   name="potfieldrobot_2" pkg="potential_field" type="potential_field"
+        args="2 4 $(arg goal_x) $(arg goal_y)" launch-prefix="xterm -hold -e" />
+<node   name="potfieldrobot_3" pkg="potential_field" type="potential_field"
+        args="3 4 $(arg goal_x) $(arg goal_y)" launch-prefix="xterm -hold -e" />
+
+<!-- node   name="$(anon rqt_console)" pkg="rqt_console" type="rqt_console" /-->
+<!-- node   name="$(anon rqt_graph)" pkg="rqt_graph" type="rqt_graph" /-->
+
+</launch>

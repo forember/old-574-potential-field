@@ -1,0 +1,22 @@
+/*
+ * File: add.css
+ * Author: Chris McKinney
+ * Edited: Feb 01 2016
+ *
+ * This file is used to add styling to Literate html.
+ */
+
+body {
+    font-family: sans-serif;
+}
+
+blockquote {
+    background: #e3f7e3 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+p:not(:empty) {
+    padding-top: 4pt;
+}
