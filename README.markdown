@@ -2,6 +2,8 @@ Just archiving some old projects of mine.
 
 This is the potential fields project from CSCE 574 (Robotics w/ Dr. Rekleitis).
 One interesting thing about this code is it is written in [Literate][] C++.
+As such, the easiest way to read the main code is
+[on my site](https://tachibanatech.com/potential_field.html).
 
 [Literate]: http://literate.zbyedidia.webfactional.com/
 
